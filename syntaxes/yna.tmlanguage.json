@@ -1,0 +1,108 @@
+{
+	"information_for_contributors": [
+		"This is a basic syntax highlighter for YNA, or Yonni na",
+		"If you want to provide a fix or improvement, @me in Kiwi Hangout"
+	],
+	"version": "0.1.0",
+	"name": "YNA",
+	"scopeName": "source.yna",
+	"patterns": [
+		{
+			"name": "meta.diff.header",
+			"begin": "{!!",
+			"end": "!?}"
+		},
+		{
+			"name": "comment.block.yna",
+			"begin": "{!",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment"
+				}
+			},
+			"end": "!?}",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment"
+				}
+			}
+		},
+		{
+			"begin": "{init}",
+			"beginCaptures": {
+				"0": {
+					"name": "meta.preprocessor.init.yna"
+				}
+			},
+			"end": "{endinit}",
+			"endCaptures": {
+				"0": {
+					"name": "meta.preprocessor.init.yna"
+				}
+			},
+			"name": "meta.preprocessor.string.init.yna"
+		},
+		{
+			"name": "constant.language.yna",
+			"match": "\\b(true|false)\\b"
+		},
+		{
+			"name": "punctuation.separator.yna",
+			"match": "[;,]"
+		},
+		{
+			"name": "punctuation.terminator.yna",
+			"match": "}"
+		},
+		{
+			"name": "storage",
+			"match": "\\b(set|save|func)\\b"
+		},
+		{
+			"name": "keyword.control",
+			"match": "\\b(when|choose|wchoose)\\b"
+		},
+		{
+			"name": "variable.language",
+			"match": "\\b(tag|me|meid|caller|callerid|channel|channelid|server|serverid|time|uses|newrep|generic|base)\\b"
+		},
+		{
+			"name": "variable",
+			"begin": "\\bs_",
+			"end": "\\b"
+		},
+		{
+			"name": "variable.function",
+			"begin": "\\bf_",
+			"end": "\\b"
+		},
+		{
+			"name": "keyword.function.yna", 
+			"match": "\\b(user|time|rep|num|member|nameof|parse|len|upper|lower|title|oneline|slice|math|void|call)\\b"
+		},
+		{
+			"name": "keyword.operator.yna",
+			"match": "\\b(eq|ne|le|lt|ge|gt|is|in|add|sub|mul|div|idiv|or|and|not|xor|mod|pow|max|min|floor|ceil|round)\\b"
+		},
+		{
+			"name": "support.type",
+			"match": "\\b(word|letter|number|decimal|error)\\b"
+		},
+		{
+			"name": "keyword.yna",
+			"match": "\\b(arg(\\d|s)|ta\\d|targs)\\b"
+		},
+		{
+			"name": "entity.other.attribute-name.yna",
+			"match": "\\b(mention|id|display_name|name)\\b"
+		},
+		{
+			"name": "constant.numeric.yna",
+			"match": "\\b\\d+\\b"
+		},
+		{
+			"name": "invalid.yna",
+			"match": "<[a-z][a-z0-9_]*:[a-z0-9 ]+>"
+		}
+	]
+}

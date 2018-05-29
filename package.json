@@ -1,0 +1,38 @@
+{
+  "name": "yna",
+  "displayName": "%displayName%",
+	"description": "%description%",
+  "version": "1.0.0",
+  "publisher": "mymoomin",
+  "bugs": "@mymoomin#0952",
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "scripts": {
+    "update-grammar": "./syntaxes/yna.tmLanguage.json"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "yna",
+        "extensions": [
+          ".yna",
+          ".txt"
+        ],
+        "aliases": [
+          "YNA",
+          "Yonni na"
+        ],
+        "firstLine": "^.*(yna|YNA|oneline)",
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "yna",
+        "scopeName": "source.yna",
+        "path": "./syntaxes/yna.tmLanguage.json"
+      }
+    ]
+  }
+}
