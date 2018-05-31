@@ -8,26 +8,16 @@
 	"scopeName": "source.yna",
 	"patterns": [
 		{
+			"name": "constant.character.escape",
+			"match": "(?<!\\\\)\\\\."
+		},
+		{
 			"name": "meta.diff.header",
 			"begin": "{!!",
 			"end": "!?}"
 		},
 		{
-			"name": "comment.block.yna",
-			"begin": "{!",
-			"beginCaptures": {
-				"0": {
-					"name": "punctuation.definition.comment"
-				}
-			},
-			"end": "!?}",
-			"endCaptures": {
-				"0": {
-					"name": "punctuation.definition.comment"
-				}
-			}
-		},
-		{
+			"name": "meta.preprocessor.string.init.yna",
 			"begin": "{init}",
 			"beginCaptures": {
 				"0": {
@@ -39,20 +29,26 @@
 				"0": {
 					"name": "meta.preprocessor.init.yna"
 				}
+			}
+		},
+		{
+			"name": "comment.block.yna",
+			"begin": "{!",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment"
+				}
 			},
-			"name": "meta.preprocessor.string.init.yna"
+			"end": "(!}|}($|(?=;)))",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment"
+				}
+			}
 		},
 		{
 			"name": "constant.language.yna",
 			"match": "\\b(true|false)\\b"
-		},
-		{
-			"name": "punctuation.separator.yna",
-			"match": "[;,]"
-		},
-		{
-			"name": "punctuation.terminator.yna",
-			"match": "}"
 		},
 		{
 			"name": "storage",
@@ -81,8 +77,12 @@
 			"match": "\\b(user|time|rep|num|member|nameof|parse|len|upper|lower|title|oneline|slice|math|void|call)\\b"
 		},
 		{
+			"name": "invalid.yna",
+			"match": "<[a-z][a-z0-9_]*:[a-z0-9 ]+>"
+		},
+		{
 			"name": "keyword.operator.yna",
-			"match": "\\b(eq|ne|le|lt|ge|gt|is|in|add|sub|mul|div|idiv|or|and|not|xor|mod|pow|max|min|floor|ceil|round)\\b"
+			"match": "(\\b(eq|ne|le|lt|ge|gt|is|in|add|sub|mul|div|idiv|or|and|not|xor|mod|pow|max|min|floor|ceil|round)\\b|((?<![<>=!])(<|>|=)(?!=)|<=|>=|!=|==|[+\\-*|]))"
 		},
 		{
 			"name": "support.type",
@@ -101,8 +101,16 @@
 			"match": "\\b\\d+\\b"
 		},
 		{
-			"name": "invalid.yna",
-			"match": "<[a-z][a-z0-9_]*:[a-z0-9 ]+>"
+			"name": "punctuation.separator.yna",
+			"match": "[;,]"
+		},
+		{
+			"name": "punctuation.section.braces.begin",
+			"match": "{"
+		},
+		{
+			"name": "punctuation.section.braces.end",
+			"match": "}"
 		}
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"comments": {
-		"blockComment": [ "{!", "!?}" ]
+		"blockComment": [ "{!", "}" ]
 	},
 	"brackets": [
 		["{", "}"]
@@ -18,5 +18,9 @@
 		{ "open": "[", "close": "]"},
 		{ "open": "(", "close": ")" },
 		{ "open": "<", "close": ">" }
-	]
+	],
+	"indentationRules": {
+		"increaseIndentPattern": "^\\s*({(?:func|set|save|when|choose|wchoose|user|time|rep|num|member|nameof|parse|len|upper|lower|title|oneline|slice|math|void|call).*?(:|;)|;)\\s*$",
+		"decreaseIndentPattern": "^\\s*(;}|;$)"
+	},
 }
