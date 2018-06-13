@@ -8,11 +8,11 @@
 	"scopeName": "source.yna",
 	"patterns": [
 		{
-			"name": "constant.character.escape",
+			"name": "constant.character.escape.yna",
 			"match": "(?<!\\\\)\\\\."
 		},
 		{
-			"name": "meta.diff.header",
+			"name": "meta.diff.header.yna",
 			"begin": "{!!",
 			"end": "!?}"
 		},
@@ -36,13 +36,13 @@
 			"begin": "{!",
 			"beginCaptures": {
 				"0": {
-					"name": "punctuation.definition.comment"
+					"name": "punctuation.definition.comment.yna"
 				}
 			},
-			"end": "(!}|}($|(?=;)))",
+			"end": "!}|}(?=;$|$)",
 			"endCaptures": {
 				"0": {
-					"name": "punctuation.definition.comment"
+					"name": "punctuation.definition.comment.yna"
 				}
 			}
 		},
@@ -51,29 +51,31 @@
 			"match": "\\b(true|false)\\b"
 		},
 		{
-			"name": "storage",
+			"name": "storage.yna",
 			"match": "\\b(set|save|func)\\b"
 		},
 		{
-			"name": "keyword.control",
+			"name": "keyword.control.yna",
 			"match": "\\b(when|choose|wchoose)\\b"
 		},
 		{
-			"name": "variable.language",
+			"name": "support.variable.builtin.yna",
 			"match": "\\b(tag|me|meid|caller|callerid|channel|channelid|server|serverid|time|uses|newrep|generic|base)\\b"
 		},
 		{
-			"name": "variable",
-			"begin": "\\bs_",
-			"end": "\\b"
+			"name": "entity.name.function.yna",
+			"match": "(?<={)f_[\\w_]*(?=}|:)|(?<={func:)[\\w_]*(?=;)"
 		},
 		{
-			"name": "variable.function",
-			"begin": "\\bf_",
-			"end": "\\b"
+			"name": "meta.definition.variable.name.yna",
+			"match": "(?<={set:)[\\w_]*(?=;)|(?<={save:)[\\w_]*(?=;)"
 		},
 		{
-			"name": "keyword.function.yna", 
+			"name": "variable.yna",
+			"match": "((?<={)[\\w_]*(?=})|(?<={set:)[\\w_]*(?=;)|(?<={save:)[\\w_]*(?=;))"
+		},
+		{
+			"name": "support.function.builtin.yna", 
 			"match": "\\b(user|time|rep|num|member|nameof|parse|len|upper|lower|title|oneline|slice|math|void|call)\\b"
 		},
 		{
@@ -85,7 +87,7 @@
 			"match": "(\\b(eq|ne|le|lt|ge|gt|is|in|add|sub|mul|div|idiv|or|and|not|xor|mod|pow|max|min|floor|ceil|round)\\b|((?<![<>=!])(<|>|=)(?!=)|<=|>=|!=|==|[+\\-*|]))"
 		},
 		{
-			"name": "support.type",
+			"name": "support.type.yna",
 			"match": "\\b(word|letter|number|decimal|error)\\b"
 		},
 		{
@@ -105,11 +107,11 @@
 			"match": "[;,]"
 		},
 		{
-			"name": "punctuation.section.braces.begin",
+			"name": "punctuation.section.braces.begin.yna",
 			"match": "{"
 		},
 		{
-			"name": "punctuation.section.braces.end",
+			"name": "punctuation.section.braces.end.yna",
 			"match": "}"
 		}
 	]
