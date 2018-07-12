@@ -63,6 +63,10 @@
 			"match": "\\b(tag|me|meid|caller|callerid|channel|channelid|server|serverid|time|uses|newrep|generic|base)\\b"
 		},
 		{
+			"name": "keyword.yna",
+			"match": "\\b(arg(\\d|s)|ta\\d|targs)\\b"
+		},
+		{
 			"name": "entity.name.function.yna",
 			"match": "(?<={)f_[\\w_]*(?=}|:)|(?<={func:)[\\w_]*(?=;)"
 		},
@@ -89,10 +93,6 @@
 		{
 			"name": "support.type.yna",
 			"match": "\\b(word|letter|number|decimal|error)\\b"
-		},
-		{
-			"name": "keyword.yna",
-			"match": "\\b(arg(\\d|s)|ta\\d|targs)\\b"
 		},
 		{
 			"name": "entity.other.attribute-name.yna",
