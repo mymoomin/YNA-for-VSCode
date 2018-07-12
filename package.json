@@ -14,7 +14,7 @@
 		"url": "https://github.com/mymoomin/YNA-for-VSCode"
 	},
   "engines": {
-    "vscode": "^0.10"
+    "vscode": "^0.10.5"
   },
   "keywords": [
     "YNA",
