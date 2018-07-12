@@ -1,4 +1,2 @@
 # YNA-for-VSCode
-Adds YNA support to Visual Studio Code.
-
-Bugs or feature requests? @ mymoomin#0952 in Kiwi Hangout or Sleepless Domain Fans.
+Adds syntax higlighting and auto-indenting for YNA, a programming language used in tags for the popular discord bot 42 to Visual Studio Code.
