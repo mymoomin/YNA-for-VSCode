@@ -48,23 +48,23 @@
 		},
 		{
 			"name": "constant.language.yna",
-			"match": "\\b(true|false)\\b"
+			"match": "(?<=;)(true|false)(?=;)"
 		},
 		{
 			"name": "storage.yna",
-			"match": "\\b(set|save|func)\\b"
+			"match": "(?<={)(set|save|func|member)(?=:)\\b"
 		},
 		{
 			"name": "keyword.control.yna",
-			"match": "\\b(when|choose|wchoose)\\b"
+			"match": "(?<={)(when|choose|wchoose)(?=:)\\b"
 		},
 		{
 			"name": "support.variable.builtin.yna",
-			"match": "\\b(tag|me|meid|caller|callerid|channel|channelid|server|serverid|time|uses|newrep|generic|base)\\b"
+			"match": "(?<={)(tag|me|meid|caller|callerid|channel|channelid|server|serverid|time|uses|newrep|generic|base)(?=[.}])\\b"
 		},
 		{
 			"name": "keyword.yna",
-			"match": "\\b(arg(\\d|s)|ta\\d|targs)\\b"
+			"match": "(?<={)(arg(\\d|s)|ta(\\d|rgs))(?=})"
 		},
 		{
 			"name": "entity.name.function.yna",
@@ -76,31 +76,31 @@
 		},
 		{
 			"name": "variable.yna",
-			"match": "((?<={)[\\w_]*(?=})|(?<={set:)[\\w_]*(?=;)|(?<={save:)[\\w_]*(?=;))"
+			"match": "((?<={)[\\w_]*(?=[}.])|(?<={set:)[\\w_]*(?=;)|(?<={save:)[\\w_]*(?=;)|(?<={member:)[\\w_]*(?=;))"
 		},
 		{
 			"name": "support.function.builtin.yna", 
-			"match": "\\b(user|time|rep|num|member|nameof|parse|len|upper|lower|title|oneline|slice|math|void|call)\\b"
+			"match": "(?<={)(user|time|rep|num|member|nameof|parse|len|upper|lower|title|oneline|slice|math|void|call)(?=[:;])"
 		},
 		{
 			"name": "invalid.yna",
-			"match": "<[a-z][a-z0-9_]*:[a-z0-9 ]+>"
+			"match": "<[a-zA-Z][\\w ]*:[\\w ]+>"
 		},
 		{
 			"name": "keyword.operator.yna",
-			"match": "(\\b(eq|ne|le|lt|ge|gt|is|in|add|sub|mul|div|idiv|or|and|not|xor|mod|pow|max|min|floor|ceil|round)\\b|((?<![<>=!])(<|>|=)(?!=)|<=|>=|!=|==|[+\\-*|]))"
+			"match": "(?<=;)(eq|ne|le|lt|ge|gt|is|in|add|sub|mul|div|idiv|or|and|not|xor|mod|pow|max|min|floor|ceil|round|[+\\-*|<>=]|<=|>=|!=|==|)(?=;)"
 		},
 		{
 			"name": "support.type.yna",
-			"match": "\\b(word|letter|number|decimal|error)\\b"
+			"match": "(?<=;)(word|letter|number|decimal|error)(?=;)"
 		},
 		{
 			"name": "entity.other.attribute-name.yna",
-			"match": "\\b(mention|id|display_name|name)\\b"
+			"match": "(?<=[.:])(mention|id|display_name|name|guild|roles|joined_at|status|activity|nick|guild_permissions|colou?r|top_role|voice|avatar|avatar_url|bot|created_at|default_avatar|default_avatar_url|discriminator|dm_channel|relationship)(?=[.;}])"
 		},
 		{
 			"name": "constant.numeric.yna",
-			"match": "\\b\\d+\\b"
+			"match": "(?<=[\\[;:])\\d+(?=[\\];])"
 		},
 		{
 			"name": "punctuation.separator.yna",

@@ -11,7 +11,7 @@
 		"url": "https://github.com/mymoomin/YNA-for-VSCode"
 	},
 	"bugs": {
-		"url": "https://github.com/mymoomin/YNA-for-VSCode"
+		"url": "https://github.com/mymoomin/YNA-for-VSCode/issues"
 	},
   "engines": {
     "vscode": "^0.10.5"
