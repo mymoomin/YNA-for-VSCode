@@ -1,18 +1,18 @@
 {
   "name": "yna",
   "displayName": "YNA",
-	"description": "YNA for Visual Studio Code",
-  "version": "1.0.0",
+  "description": "YNA for Visual Studio Code",
+  "version": "2.0.0",
   "publisher": "mymoomin",
   "license": "MIT",
-	"homepage": "https://github.com/mymoomin/YNA-for-VSCode",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/mymoomin/YNA-for-VSCode"
-	},
-	"bugs": {
-		"url": "https://github.com/mymoomin/YNA-for-VSCode/issues"
-	},
+  "homepage": "https://github.com/mymoomin/YNA-for-VSCode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mymoomin/YNA-for-VSCode"
+  },
+  "bugs": {
+    "url": "https://github.com/mymoomin/YNA-for-VSCode/issues"
+  },
   "engines": {
     "vscode": "^0.10.5"
   },
@@ -22,8 +22,8 @@
     "42"
   ],
   "categories": [
-		"Programming Languages"
-	],
+    "Programming Languages"
+  ],
   "scripts": {
     "update-grammar": "./syntaxes/yna.tmLanguage.json"
   },
