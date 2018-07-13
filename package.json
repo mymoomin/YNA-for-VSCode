@@ -24,6 +24,7 @@
   "categories": [
     "Programming Languages"
   ],
+  "icon": "images/icon.png",
   "scripts": {
     "update-grammar": "./syntaxes/yna.tmLanguage.json"
   },
