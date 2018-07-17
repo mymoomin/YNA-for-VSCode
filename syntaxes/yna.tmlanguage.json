@@ -68,19 +68,19 @@
 		},
 		{
 			"name": "entity.name.function.yna",
-			"match": "(?<={)f_[\\w_]*(?=}|:)|(?<={func:)[\\w_]*(?=;)"
+			"match": "(?<={)f_[\\w_]*(?=}|:)|(?<={func:)[\\w_]+(?=;)"
 		},
 		{
 			"name": "meta.definition.variable.name.yna",
-			"match": "(?<={set:)[\\w_]*(?=;)|(?<={save:)[\\w_]*(?=;)"
+			"match": "(?<={set:)[\\w_]+(?=;)|(?<={save:)[\\w_]+(?=;)"
 		},
 		{
 			"name": "variable.yna",
-			"match": "((?<={)[\\w_]*(?=[}.])|(?<={set:)[\\w_]*(?=;)|(?<={save:)[\\w_]*(?=;)|(?<={member:)[\\w_]*(?=;))"
+			"match": "((?<={)[\\w_]+(?=[}.])|(?<={set:)[\\w_]+(?=;)|(?<={save:)[\\w_]+(?=;)|(?<={member:)[\\w_]+(?=;))"
 		},
 		{
 			"name": "support.function.builtin.yna", 
-			"match": "(?<={)(user|time|rep|num|member|nameof|parse|len|upper|lower|title|oneline|slice|math|void|call)(?=[:;])"
+			"match": "(?<={)(user|time|rep|num|nameof|parse|len|upper|lower|title|oneline|slice|math|void|call)(?=[:;])"
 		},
 		{
 			"name": "invalid.yna",
@@ -88,7 +88,7 @@
 		},
 		{
 			"name": "keyword.operator.yna",
-			"match": "(?<=;)(eq|ne|le|lt|ge|gt|is|in|add|sub|mul|div|idiv|or|and|not|xor|mod|pow|max|min|floor|ceil|round|[+\\-*|<>=]|<=|>=|!=|==|)(?=;)"
+			"match": "(?<=;)(eq|ne|le|lt|ge|gt|is|in|add|sub|mul|div|idiv|or|and|not|xor|mod|pow|max|min|floor|ceil|round|[+\\-*|<>=]|<=|>=|!=|==)(?=;)"
 		},
 		{
 			"name": "support.type.yna",
