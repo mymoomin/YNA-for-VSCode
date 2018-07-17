@@ -88,7 +88,7 @@
 		},
 		{
 			"name": "keyword.operator.yna",
-			"match": "(?<=;)(eq|ne|le|lt|ge|gt|is|in|add|sub|mul|div|idiv|or|and|not|xor|mod|pow|max|min|floor|ceil|round|[+\\-*|<>=]|<=|>=|!=|==)(?=;)"
+			"match": "(?<=[;:])(eq|ne|le|lt|ge|gt|is|in|add|sub|mul|div|idiv|or|and|not|xor|mod|pow|max|min|floor|ceil|round|[+\\-*/%&|^~=<>]|<=|>=|!=|==|/f|//|\\*\\*)(?=;)"
 		},
 		{
 			"name": "support.type.yna",
