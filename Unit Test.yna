@@ -1,0 +1,15 @@
+{oneline:
+    {!!description Use this to test colours in different themes}
+    {!This is a comment}
+    {init}Initialisation Code{endinit}
+    {set:newrep;true;}
+    {func:f_echo;{arg1};}
+    Hello, World\n
+    {when:{base};eq;word;
+        Hello, {caller.display_name}
+        1 + 2 is {math:+;1;2;}
+        input: {f_echo}
+    ;
+        <base:not a word>
+    ;}
+;}
