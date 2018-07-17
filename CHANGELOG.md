@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Fixed
 
-- All operators are now highlighted, and in all of contexts they're used in.
+- All arithmetic operators are now highlighted, and in all of contexts they're used in.
 
 ## [2.1.2] - 2018-07-17
 
