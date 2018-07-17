@@ -100,7 +100,7 @@
 		},
 		{
 			"name": "constant.numeric.yna",
-			"match": "(?<=[\\[;:])\\d+(?=[\\];]|$)"
+			"match": "(?<=[\\[;:,])\\d+(?=[\\];,]|$)"
 		},
 		{
 			"name": "punctuation.separator.yna",
