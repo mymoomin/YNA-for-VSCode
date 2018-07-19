@@ -76,7 +76,7 @@
 		},
 		{
 			"name": "variable.yna",
-			"match": "((?<={)[\\w_]+(?=[}.])|(?<={set:)[\\w_]+(?=;)|(?<={save:)[\\w_]+(?=;)|(?<={member:)[\\w_]+(?=;))"
+			"match": "((?<={)[\\w_]+(?=[}.{])|(?<={set:)[\\w_]+(?=[;{])|(?<={save:)[\\w_]+(?=;)|(?<={member:)[\\w_]+(?=;))"
 		},
 		{
 			"name": "support.function.builtin.yna", 
@@ -100,7 +100,7 @@
 		},
 		{
 			"name": "constant.numeric.yna",
-			"match": "(?<=[\\[;:,])-?\\d+(?=[\\];,]|$)"
+			"match": "(?<=[\\[;:,])-?\\d+(\\.\\d*)?(?=[\\];,]|$)"
 		},
 		{
 			"name": "punctuation.separator.yna",
