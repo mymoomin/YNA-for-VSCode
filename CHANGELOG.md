@@ -6,9 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## Unreleased
 
+### Added
+
+- Now only highlights {[function];} when that's correct syntax
+
 ### Fixed
 
-- Now recognises decimals as numbers
+- Now recognises decimals as numeric
 
 ## [2.1.3] - 2018-07-17
 

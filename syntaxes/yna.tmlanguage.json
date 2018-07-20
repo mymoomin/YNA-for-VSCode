@@ -80,7 +80,7 @@
 		},
 		{
 			"name": "support.function.builtin.yna", 
-			"match": "(?<={)(user|time|rep|num|nameof|parse|len|upper|lower|title|oneline|slice|math|void|call)(?=[:;])"
+			"match": "(?<={)(user|time|num)(?=;)|(?<={)(user|time|rep|num|nameof|parse|len|upper|lower|title|oneline|slice|math|void|call)(?=:)"
 		},
 		{
 			"name": "invalid.yna",
