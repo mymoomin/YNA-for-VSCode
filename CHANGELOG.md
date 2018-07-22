@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Added
 
-- Now only highlights {[function];} when that's correct syntax (no more accidentally typing {set;var;stuff;})
+- Now only highlights `{some_builtin_function;}` when that's correct syntax (no more accidentally typing `{set;var;stuff;}`)
 
 ### Fixed
 
