@@ -56,11 +56,11 @@
 		},
 		{
 			"name": "keyword.control.yna",
-			"match": "(?<={)(when|choose|wchoose)(?=:)\\b"
+			"match": "(?<={)(when|choose|wchoose|loop)(?=:)\\b"
 		},
 		{
 			"name": "support.variable.builtin.yna",
-			"match": "(?<={)(tag|me|meid|caller|callerid|channel|channelid|server|serverid|time|uses|newrep|generic|base)(?=[.}])\\b"
+			"match": "(?<={)(tag|me|meid|caller|callerid|channel|channelid|server|serverid|time|uses|newrep|generic|base|iter)(?=[.}])\\b"
 		},
 		{
 			"name": "keyword.yna",
