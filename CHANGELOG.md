@@ -10,6 +10,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 - {arglen} and {talen} are now keywords
 
+### Fixed
+
+- Now highlights e.g. the mention in {nameof:​346555330358149120;mention;}
+
 ## [2.3.1] - 2018-08-01
 
 ### Fixed
