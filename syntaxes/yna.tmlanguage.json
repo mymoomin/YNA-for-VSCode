@@ -64,7 +64,7 @@
 		},
 		{
 			"name": "keyword.yna",
-			"match": "(?<={)(arg(\\d|s)|ta(\\d|rgs))(?=})"
+			"match": "(?<={)(arg(\\d|s|len)|ta(\\d|rgs|len))(?=})"
 		},
 		{
 			"name": "entity.name.function.yna",
