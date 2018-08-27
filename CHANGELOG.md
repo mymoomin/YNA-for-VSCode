@@ -1,4 +1,4 @@
-# Changelog
+﻿# Changelog
 
 All notable changes to the extension will be documented in this file.
 
@@ -8,23 +8,23 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Added
 
-- {arglen} and {talen} are now keywords
+- `{arglen}` and `{talen}` are now keywords (this just changes what shade of blue they are)
 
 ### Fixed
 
-- Now highlights e.g. the mention in {nameof:​346555330358149120;mention;}
+- Now highlights attributs in `{nameof:` and `{user:` e.g. the mention in {nameof:346555330358149120;mention;}
 
 ## [2.3.1] - 2018-08-01
 
 ### Fixed
 
--Now autoindents after {loop:
+-Now autoindents after `{loop:`
 
 ## [2.3.0] - 2018-08-01
 
 ### Added
 
-- Now higlights {loop: statements and {iter}
+- Now higlights `{loop:` statements and `{iter}`
 
 ## [2.2.0] - 2018-08-01
 
