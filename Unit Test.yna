@@ -1,5 +1,5 @@
 {oneline:
-    {!!description Use this to test colours in different themes}
+    {!!description Syntax highlighting for Visual Studio Code!}
     {!This is a comment}
     {init}Initialisation Code{endinit}
     {set:newrep;true;}
