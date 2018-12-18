@@ -21,6 +21,6 @@
 	],
 	"indentationRules": {
 		"increaseIndentPattern": "^\\s*({(?:func|set|save|when|choose|wchoose|user|time|rep|num|member|nameof|parse|len|upper|lower|title|oneline|slice|math|void|call|loop).*?[:;]|;)\\s*$",
-		"decreaseIndentPattern": "^\\s*(;}|;$)"
+		"decreaseIndentPattern": "^\\s*(;}|;$)",
 	},
 }
