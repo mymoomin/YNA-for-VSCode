@@ -4,15 +4,18 @@ All notable changes to the extension will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## [2.4.0] - 2018-12-20
 
 ### Added
 
 - `{arglen}` and `{talen}` are now keywords (this just changes what shade of blue they are)
+- `{embed:` is now highlighted as a function
+- Will now outdent after a `}`, as well as after a `;}`
 
 ### Fixed
 
-- Now highlights attributs in `{nameof:` and `{user:` e.g. the mention in {nameof:346555330358149120;mention;}
+- Now highlights attributes in `{nameof:` and `{user:` e.g. the mention in `{nameof:346555330358149120;mention;}`
+- The icon looks better!
 
 ## [2.3.1] - 2018-08-01
 
